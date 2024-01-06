@@ -8,11 +8,9 @@ int main()
 
 //    manage_threads();
 
-//    manage_cairo();
-
 //    manage_format();
 
-//    manage_any();
+    manage_any();
 
 //    manage_time();
 

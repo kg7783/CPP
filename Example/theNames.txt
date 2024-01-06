@@ -1,0 +1,5 @@
+Edsger Dijkstra: Made advances in algorithms, the semaphore (programming).
+Donald Knuth: Wrote The Art of Computer Programming and created TeX.
+Leslie Lamport: Formulated algorithms in distributed systems (e.g. the bakery algorithm).
+Stephen Cook: Formalized the notion of NP-completeness.
+

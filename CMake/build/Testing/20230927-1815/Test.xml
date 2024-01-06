@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20230927-1815-Experimental"
+	Name="kg7783-IdeaPad"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="kg7783-IdeaPad"
+	OSRelease="5.15.0-84-generic"
+	OSVersion="#93-Ubuntu SMP Tue Sep 5 17:16:10 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="80"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="13821"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1200"
+	>
+	<Testing>
+		<StartDateTime>Sep 27 20:15 CEST</StartDateTime>
+		<StartTestTime>1695838551</StartTestTime>
+		<TestList/>
+		<EndDateTime>Sep 27 20:15 CEST</EndDateTime>
+		<EndTestTime>1695838551</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

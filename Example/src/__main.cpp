@@ -10,9 +10,9 @@ int main()
 
 //    manage_format();
 
-    manage_any();
+//    manage_any();
 
-//    manage_time();
+    manage_time();
 
 //    manage_fstream();
 

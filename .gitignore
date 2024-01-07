@@ -4,3 +4,5 @@ Example/myoutput.txt
 Example/theNames.txt
 FirstSteps/build/Example
 FirstSteps/build/FirstSteps
+MultipleProjects/HelloWorld1/build/HelloWorld1
+MultipleProjects/HelloWorld2/build/HelloWorld2

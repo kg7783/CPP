@@ -7,7 +7,6 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "-pthread",
                 "${workspaceFolder}/src/*.cpp",
                 "-std=c++23",
                 "-o",

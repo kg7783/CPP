@@ -6,7 +6,7 @@ int main()
 {
 //    manage_deque();
  
-//    manage_threads();
+    manage_threads();
 //    manage_pthreads();
 
 //    manage_format();

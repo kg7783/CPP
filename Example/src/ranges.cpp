@@ -2,7 +2,7 @@
 #include <ranges>
 #include <vector>
 
-void manage_ranges() 
+void manage_ranges(void) 
 {
 
     std::vector<int> numbers = {1, 2, 3, 4, 5, 6};

@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "C/C++: g++ Debug active folder",
+            "name": "C/C++: gcc Debug active folder",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/${workspaceFolderBasename}",
@@ -23,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ Build active folder",
+            "preLaunchTask": "C/C++: gcc Build active folder",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ],

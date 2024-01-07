@@ -2,13 +2,15 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ Build active folder",
-            "command": "/usr/bin/g++",
+            "label": "C/C++: gcc Build active folder",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
                 "-std=c++23",
+                "-lm",
+                "-lstdc++",
                 "-o",
                 "${workspaceFolder}/build/${workspaceFolderBasename}"
             ],

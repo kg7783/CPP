@@ -23,7 +23,7 @@ int main()
 
 //    manage_ranges();
 
-    manage_calc();
+//    manage_calc();
 
     return 0;
 }

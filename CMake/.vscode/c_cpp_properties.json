@@ -14,7 +14,7 @@
                 "path": [
                     "${workspaceFolder}",
                     "/usr/include/cairo",
-                    "/usr/include/gtk-4.0/gtk"
+                    "/usr/include/gtk-3.0/gtk"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },

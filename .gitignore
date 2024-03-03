@@ -126,3 +126,22 @@ CMake/build/Testing/20240303-2244/Test.xml
 CMake/build/Testing/TAG
 
 CMake/build/Testing/Temporary/LastTest_20240303-2244.log
+CMake/build/.ninja_deps
+CMake/build/.ninja_log
+CMake/build/CMakeTest
+CMake/build/.cmake/api/v1/reply/cache-v2-ac59dc697c18d04a81e2.json
+CMake/build/.cmake/api/v1/reply/cmakeFiles-v1-972617b3de07b4553d4e.json
+CMake/build/.cmake/api/v1/reply/index-2024-03-03T22-49-00-0241.json
+CMake/build/CMakeFiles/CMakeTest.dir/src/__main.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/any.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/calc.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/compare.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/complex.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/concepts.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/deque.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/format.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/fstream.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/pthreads.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/ranges.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/thread.cpp.o
+CMake/build/CMakeFiles/CMakeTest.dir/src/time.cpp.o

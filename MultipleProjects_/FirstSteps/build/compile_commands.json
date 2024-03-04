@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/__main.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/__main.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/__main.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/any.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/any.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/any.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/calc.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/calc.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/calc.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/compare.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/compare.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/compare.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/complex.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/complex.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/complex.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/concepts.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/concepts.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/concepts.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/deque.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/deque.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/deque.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/format.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/format.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/format.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/fstream.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/fstream.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/fstream.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/pthreads.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/pthreads.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/pthreads.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/ranges.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/ranges.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/ranges.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/thread.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/thread.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/thread.cpp"
+},
+{
+  "directory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/build",
+  "command": "/usr/bin/c++ -g -std=gnu++23 -o CMakeFiles/CMakeFirstSteps.dir/src/time.cpp.o -c /home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/time.cpp",
+  "file": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects_/FirstSteps/src/time.cpp"
+}
+]

@@ -1,0 +1,15 @@
+# ninja log v5
+0	20	1709581413488024917	CMakeFiles/CMakeFirstSteps.dir/src/__main.cpp.o	5a08db7618c1464b
+1	48	1709581413516025289	CMakeFiles/CMakeFirstSteps.dir/src/pthreads.cpp.o	84393089bcf1f000
+1	523	1709581413988031561	CMakeFiles/CMakeFirstSteps.dir/src/concepts.cpp.o	b40b661c6a8a002
+0	531	1709581413996031667	CMakeFiles/CMakeFirstSteps.dir/src/calc.cpp.o	f176edad583eac6b
+0	531	1709581413996031667	CMakeFiles/CMakeFirstSteps.dir/src/compare.cpp.o	70028787bf96f168
+1	545	1709581414012031880	CMakeFiles/CMakeFirstSteps.dir/src/complex.cpp.o	921509a745c0c671
+2	557	1709581414024032039	CMakeFiles/CMakeFirstSteps.dir/src/time.cpp.o	594b3907cbd1727e
+1	605	1709581414072032679	CMakeFiles/CMakeFirstSteps.dir/src/fstream.cpp.o	32692ed5e3b36e09
+1	657	1709581414124033371	CMakeFiles/CMakeFirstSteps.dir/src/deque.cpp.o	245b1809f55c7b7e
+0	761	1709581414228034755	CMakeFiles/CMakeFirstSteps.dir/src/any.cpp.o	b1ddaf323dc64b49
+1	857	1709581414324036032	CMakeFiles/CMakeFirstSteps.dir/src/ranges.cpp.o	54ffbf4719c2af80
+1	1156	1709581414624040024	CMakeFiles/CMakeFirstSteps.dir/src/thread.cpp.o	a5aba608d71436c1
+1	1694	1709581415164047213	CMakeFiles/CMakeFirstSteps.dir/src/format.cpp.o	a268a0e9656f3e6a
+1694	1792	1709581415256048439	CMakeFirstSteps	7377f311988c8995

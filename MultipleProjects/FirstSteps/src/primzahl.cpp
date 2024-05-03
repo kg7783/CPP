@@ -107,7 +107,7 @@ void manage_primzahl(unsigned long lower_limit, unsigned long upper_limit)
 
     for(unsigned long i=lower_limit; i<= upper_limit; i++)
     {
-        bool result = prim_(i);
+        bool result = prim(i);
         if(result == true)
         {
             outfile << i << endl;

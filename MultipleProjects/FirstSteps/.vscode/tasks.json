@@ -21,6 +21,10 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
+                "-lSDL2main",
+                "-lSDL2",
+                "-lm",
+                "-lstdc++",
                 "-std=c++23",
                 "-o",
                 "${workspaceFolder}/build/${workspaceFolderBasename}"

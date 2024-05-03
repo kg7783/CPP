@@ -1,4 +1,3 @@
-
 #include <format>
 #include <iostream>
 #include <ostream>
@@ -36,4 +35,4 @@ void manage_format(void)
 
 
 }
- 
+

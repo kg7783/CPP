@@ -1,11 +1,10 @@
 #include "_functions.h"
 
-
 int main()
 {
 //    manage_deque();
  
-    manage_threads();
+//    manage_threads();
 //    manage_pthreads();
 
 //    manage_format();
@@ -23,6 +22,17 @@ int main()
 //    manage_ranges();
 
 //    manage_calc();
+
+//    manage_primzahl(0,10000000);
+
+//    manage_fractale();
+
+//    std::cout << fmt::format("Hello");
+    
+
+//    manage_sdl();
+
+//    manage_boost();
 
     return 0;
 }

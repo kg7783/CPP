@@ -36,5 +36,7 @@ int main()
 
     manage_vcpkg();
 
+    manage_box2d();
+
     return 0;
 }

@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include"
+                "/usr/include/**",
+                "/opt/vcpkg/installed/x64-linux/include/**"
             ],
             "defines": [],
             "cStandard": "c23",
@@ -14,7 +15,8 @@
                 "path": [
                     "${workspaceFolder}",
                     "/usr/include/cairo",
-                    "/usr/include/gtk-3.0/gtk"
+                    "/usr/include/gtk-3.0/gtk",
+                    "/opt/vcpkg/installed/x64-linux/include/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },

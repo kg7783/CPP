@@ -15,3 +15,4 @@ extern int manage_fractale(void);
 extern int manage_sdl();
 extern int manage_boost();
 extern void manage_vcpkg(void);
+extern int manage_box2d();

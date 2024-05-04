@@ -7,7 +7,9 @@
     "cmake.configureSettings": 
     {
         "CMAKE_TOOLCHAIN_FILE":
-        "/opt/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "/opt/vcpkg/scripts/buildsystems/vcpkg.cmake",
+
+        "Boost_NO_WARN_NEW_VERSIONS": false
     }
 
 //    "cmake.configureArgs": ["-DCMAKE_TOOLCHAIN_FILE=/opt/vcpkg/scripts/buildsystems/vcpkg.cmake"]

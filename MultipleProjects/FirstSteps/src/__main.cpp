@@ -34,9 +34,11 @@ int main()
 
 //    manage_boost();
 
-    manage_vcpkg();
+//    manage_vcpkg();
 
-    manage_box2d();
+//    manage_box2d();
+
+    manage_boost_locale();
 
     return 0;
 }

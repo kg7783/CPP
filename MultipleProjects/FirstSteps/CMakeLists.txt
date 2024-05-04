@@ -10,13 +10,19 @@ project(CMakeFirstSteps VERSION 0.1.0 LANGUAGES C CXX)
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
+find_package(box2d CONFIG REQUIRED)
+find_package(fmt CONFIG REQUIRED)
+
 include(CTest)
 enable_testing()
 
 file(GLOB SOURCES "src/*.cpp")
 add_executable(CMakeFirstSteps ${SOURCES})
 
-target_link_libraries(CMakeFirstSteps ${SDL2_LIBRARIES})
+target_link_libraries(CMakeFirstSteps 
+                        ${SDL2_LIBRARIES} 
+                        box2d::box2d 
+                        fmt::fmt)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

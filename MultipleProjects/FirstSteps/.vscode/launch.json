@@ -32,7 +32,7 @@
                 }
             ],
             "preLaunchTask": "CMake: Build active folder"
-        },
+        }/*,
         {
             "name": "C/C++: Debug active folder",
             "type": "cppdbg",
@@ -58,6 +58,6 @@
             ],
             "preLaunchTask": "C/C++: Build active folder",
             "miDebuggerPath": "/usr/bin/gdb"
-        }
+        }*/
     ]
 }

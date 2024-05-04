@@ -16,7 +16,7 @@
         {
             "label": "C/C++: Build active folder",
             "type": "cppbuild",
-            "command": "/usr/bin/g++",
+            "command": "/usr/bin/g++-13",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -24,6 +24,7 @@
                 "-lSDL2main",
                 "-lSDL2",
                 "-lm",
+                "-lfmt",
                 "-lstdc++",
                 "-std=c++23",
                 "-o",

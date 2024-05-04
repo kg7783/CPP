@@ -1,5 +1,6 @@
 #include "_functions.h"
 
+
 int main()
 {
 //    manage_deque();
@@ -23,16 +24,17 @@ int main()
 
 //    manage_calc();
 
-    manage_primzahl(0,10000000);
+//    manage_primzahl(0,10000000);
 
 //    manage_fractale();
 
 //    std::cout << fmt::format("Hello");
     
-
 //    manage_sdl();
 
 //    manage_boost();
+
+    manage_vcpkg();
 
     return 0;
 }

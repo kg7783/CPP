@@ -14,3 +14,4 @@ extern void manage_primzahl(unsigned long lower_limit, unsigned long upper_limit
 extern int manage_fractale(void);
 extern int manage_sdl();
 extern int manage_boost();
+extern void manage_vcpkg(void);

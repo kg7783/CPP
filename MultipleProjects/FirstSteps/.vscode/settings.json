@@ -1,13 +1,14 @@
 {
-    "C_Cpp.errorSquiggles": "enabled" //,
-//    "C_Cpp.default.compilerPath": "/usr/bin/g++",
-//    "cmake.useCMakePresets": "never" //,
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+//    "cmake.useCMakePresets": "never"
 
-//    "cmake.configureSettings": 
-//    {
-//        "CMAKE_TOOLCHAIN_FILE":
-//        "/opt/vcpkg/scripts/buildsystems/vcpkg.cmake"
-//    }//,
+    "cmake.configureOnOpen": true,
+    "cmake.configureSettings": 
+    {
+        "CMAKE_TOOLCHAIN_FILE":
+        "/opt/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    }
 
 //    "cmake.configureArgs": ["-DCMAKE_TOOLCHAIN_FILE=/opt/vcpkg/scripts/buildsystems/vcpkg.cmake"]
 }

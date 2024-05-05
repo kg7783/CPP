@@ -17,3 +17,5 @@ extern int manage_boost();
 extern void manage_vcpkg(void);
 extern int manage_box2d();
 extern void manage_boost_locale(void);
+extern void manage_boost_chrono();
+extern void manage_boost_math();

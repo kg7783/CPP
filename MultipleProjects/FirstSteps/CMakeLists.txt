@@ -13,7 +13,11 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
 find_package(Boost 1.84 REQUIRED COMPONENTS
-             date_time filesystem iostreams locale)
+                date_time 
+                filesystem 
+                iostreams 
+                locale
+                chrono)
 
 
 find_package(fmt CONFIG REQUIRED)
@@ -28,10 +32,12 @@ target_link_libraries(CMakeFirstSteps
                         ${SDL2_LIBRARIES} 
                         box2d::box2d 
                         fmt::fmt
+                        Boost::boost
                         Boost::date_time 
                         Boost::filesystem
                         Boost::iostreams
-                        Boost::locale)
+                        Boost::locale
+                        Boost::chrono)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

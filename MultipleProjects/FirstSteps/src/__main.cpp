@@ -38,7 +38,11 @@ int main()
 
 //    manage_box2d();
 
-    manage_boost_locale();
+//    manage_boost_locale();
+
+//    manage_boost_chrono();
+
+    manage_boost_math();
 
     return 0;
 }

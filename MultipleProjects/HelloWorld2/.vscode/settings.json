@@ -1,5 +1,5 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
-    "cmake.sourceDirectory": "/home/kg7783/VisualStudioCode/CPP/MultipleProjects/FirstSteps"
+    "cmake.sourceDirectory": "/home/kg7783/VSCode/CPP/MultipleProjects/FirstSteps"
 }

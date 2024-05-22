@@ -30,7 +30,7 @@ int main()
 
 //    std::cout << fmt::format("Hello");
     
-//    manage_sdl();
+    manage_sdl();
 
 //    manage_boost();
 
@@ -42,7 +42,7 @@ int main()
 
 //    manage_boost_chrono();
 
-    manage_boost_math();
+//    manage_boost_math();
 
     return 0;
 }

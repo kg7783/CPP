@@ -12,6 +12,9 @@ include_directories (${Box2D_SOURCE_DIR})
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
+find_package(SDL2_image REQUIRED)
+include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
+
 find_package(Boost 1.84 REQUIRED COMPONENTS
                 date_time 
                 filesystem 
@@ -30,6 +33,7 @@ add_executable(CMakeFirstSteps ${SOURCES})
 
 target_link_libraries(CMakeFirstSteps 
                         ${SDL2_LIBRARIES} 
+                        ${SDL2_IMAGE_LIBRARIES}
                         box2d::box2d 
                         fmt::fmt
                         Boost::boost

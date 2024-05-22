@@ -9,6 +9,9 @@
         "CMAKE_TOOLCHAIN_FILE":
         "~/vcpkg/scripts/buildsystems/vcpkg.cmake",
 
+        "CMAKE_MODULE_PATH":
+        "~/VSCode/CPP/MultipleProjects/FirstSteps/src/cmake",
+
         "Boost_NO_WARN_NEW_VERSIONS": false
     }
 

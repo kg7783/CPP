@@ -1,0 +1,13 @@
+extern int _01_hello_SDL();
+extern int _02_getting_an_image_on_the_screen();
+extern int _03_event_driven_programming();
+extern int _04_key_presses();
+extern int _05_optimized_surface_loading_and_soft_stretching();
+extern int _06_extension_libraries_and_loading_other_image_formats();
+extern int _07_texture_loading_and_rendering();
+extern int _08_geometry_rendering();
+extern int _21_sound_effects_and_music();
+extern int _27_collision_detection();
+extern int _30_scrolling();
+extern int _31_scrolling_backgrounds();
+extern int _51_SDL_and_modern_opengl();

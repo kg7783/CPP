@@ -514,10 +514,10 @@ int _27_collision_detection()
 
 					//Handle input for the dot
 					dot.handleEvent( e );
-				}
 
-				//Move the dot and check collision
-				dot.move( wall );
+					//Move the dot and check collision
+					dot.move( wall );
+				}
 
 				//Clear screen
 				SDL_SetRenderDrawColor( gRenderer, 0xFF, 0xFF, 0xFF, 0xFF );

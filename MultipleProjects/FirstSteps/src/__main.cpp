@@ -54,8 +54,8 @@ int main()
 //    _06_extension_libraries_and_loading_other_image_formats();
 //    _07_texture_loading_and_rendering();
 //    _08_geometry_rendering();
-    _21_sound_effects_and_music();
-//    _27_collision_detection();
+//    _21_sound_effects_and_music();
+    _27_collision_detection();
 //    _30_scrolling();
 //    _31_scrolling_backgrounds();
 //    _51_SDL_and_modern_opengl();

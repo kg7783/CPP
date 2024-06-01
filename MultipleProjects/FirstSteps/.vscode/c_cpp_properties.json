@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}/build/_cmrc/include/cmrc/**",
                 "/usr/include/**",
                 "~/vcpkg/installed/x64-linux/include/**"
             ],
@@ -14,6 +15,7 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}",
+                    "${workspaceFolder}/build/_cmrc/include/cmrc",
                     "/usr/include/cairo",
                     "/usr/include/gtk-3.0/gtk",
                     "~/vcpkg/installed/x64-linux/include/**"

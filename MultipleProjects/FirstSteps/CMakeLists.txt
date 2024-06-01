@@ -4,6 +4,43 @@ set (CMAKE_CXX_STANDARD 23)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++23")
 
+
+#------------ Download CmakeRC Resource compiler ----------------#
+file(DOWNLOAD "https://raw.githubusercontent.com/vector-of-bool/cmrc/master/CMakeRC.cmake"
+                 "${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+include("${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+
+#========== Targets Configurations ============#
+cmrc_add_resource_library(
+    FirstSteps-resources
+
+    ALIAS FirstSteps::rc
+    NAMESPACE FirstSteps
+
+    rc/_U1A1218.JPG
+
+    src/SDL/rc/beat.wav
+    src/SDL/rc/dot.bmp
+    src/SDL/rc/high.wav
+    src/SDL/rc/medium.wav
+    src/SDL/rc/scratch.wav
+    src/SDL/rc/x.bmp
+    src/SDL/rc/bg_30.png
+    src/SDL/rc/down.bmp
+    src/SDL/rc/left.bmp
+    src/SDL/rc/press.bmp
+    src/SDL/rc/stretch.bmp
+    src/SDL/rc/bg.png
+    src/SDL/rc/loaded.png
+    src/SDL/rc/prompt.png
+    src/SDL/rc/texture.png
+    src/SDL/rc/dot_27.bmp
+    src/SDL/rc/hello_world.bmp
+    src/SDL/rc/low.wav
+    src/SDL/rc/right.bmp
+    src/SDL/rc/up.bmp
+    )
+
 project(CMakeFirstSteps VERSION 0.1.0 LANGUAGES C CXX)
 
 find_package(box2d CONFIG REQUIRED)
@@ -64,6 +101,7 @@ target_link_libraries(CMakeFirstSteps
                         Boost::chrono
                         OpenGL::GL
                         GLEW::GLEW
+                        FirstSteps::rc
                         )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

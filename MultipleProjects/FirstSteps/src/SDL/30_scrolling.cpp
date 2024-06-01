@@ -299,7 +299,7 @@ void Dot_30::handleEvent( SDL_Event& e )
             case SDLK_UP: mVelY += DOT_VEL; break;
             case SDLK_DOWN: mVelY -= DOT_VEL; break;
             case SDLK_LEFT: mVelX += DOT_VEL; break;
-            case SDLK_RIGHT: mVelX -= DOT_VEL; break;
+			case SDLK_RIGHT: mVelX -= DOT_VEL; break;
         }
     }
 }
@@ -478,10 +478,10 @@ int _30_scrolling()
 
 					//Handle input for the dot
 					dot.handleEvent( e );
-				}
 
-				//Move the dot
-				dot.move();
+					//Move the dot
+					dot.move();
+				}
 
 				//Center the camera over the dot
 				camera.x = ( dot.getPosX() + Dot_30::DOT_WIDTH / 2 ) - SCREEN_WIDTH / 2;

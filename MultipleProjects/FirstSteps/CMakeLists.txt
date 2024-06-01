@@ -4,11 +4,37 @@ set (CMAKE_CXX_STANDARD 23)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++23")
 
+#========== Set vcpkg path BEFORE project(...), otherwise error ==================#
+set(CMAKE_TOOLCHAIN_FILE ${CMAKE_TOOLCHAIN_FILE} $ENV{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake)
+
+#========== Define project(...) ==================#
+project(CMakeFirstSteps VERSION 0.1.0 LANGUAGES C CXX)
+
+#========== Additional CMake modules: FirstSteps/src/cmake/ ==================#
+# - CMakeRC.cmake
+# - FindSDL2_image.cmake
+# - FindSDL2_mixer.cmake
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/src/cmake)
+
+#========== Print some variables for info ==================#
+include(CMakePrintHelpers)
+cmake_print_variables(PROJECT_SOURCE_DIR)
+cmake_print_variables(CMAKE_BINARY_DIR)
+cmake_print_variables(CMAKE_MODULE_PATH)
+cmake_print_variables(CMAKE_CURRENT_SOURCE_DIR)
+cmake_print_variables(CMAKE_TOOLCHAIN_FILE)
+
+# ========== Already includes with 
+# - set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/src/cmake)
+# => so this is not necessary:
 
 #------------ Download CmakeRC Resource compiler ----------------#
-file(DOWNLOAD "https://raw.githubusercontent.com/vector-of-bool/cmrc/master/CMakeRC.cmake"
-                 "${CMAKE_BINARY_DIR}/CMakeRC.cmake")
-include("${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+#file(DOWNLOAD "https://raw.githubusercontent.com/vector-of-bool/cmrc/master/CMakeRC.cmake"
+#                 "${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+#include("${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+
+# Include the main module of CmakeRC Resource compiler
+include(CMakeRC)
 
 #========== Targets Configurations ============#
 cmrc_add_resource_library(
@@ -41,8 +67,8 @@ cmrc_add_resource_library(
     src/SDL/rc/up.bmp
     )
 
-project(CMakeFirstSteps VERSION 0.1.0 LANGUAGES C CXX)
 
+# Add box2d library
 find_package(box2d CONFIG REQUIRED)
 include_directories (${Box2D_SOURCE_DIR})
 
@@ -70,14 +96,16 @@ find_package(OpenGL REQUIRED)
 include_directories(${OpenGL_INCLUDE_DIRS})
 #link_libraries(${OpenGL_LIBRARIES})
 
+# Add Boost library
 find_package(Boost 1.84 REQUIRED COMPONENTS
                 date_time 
                 filesystem 
                 iostreams 
                 locale
-                chrono)
+                chrono
+            )
 
-
+# Add fmt library
 find_package(fmt CONFIG REQUIRED)
 
 #include(CTest)

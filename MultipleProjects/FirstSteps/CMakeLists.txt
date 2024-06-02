@@ -65,6 +65,32 @@ cmrc_add_resource_library(
     src/SDL/rc/low.wav
     src/SDL/rc/right.bmp
     src/SDL/rc/up.bmp
+    src/SDL/rc/viewport.png
+    src/SDL/rc/foo.png
+    src/SDL/rc/background.png
+    src/SDL/rc/dots.png
+    src/SDL/rc/colors.png
+    src/SDL/rc/fadein.png
+    src/SDL/rc/fadeout.png
+    src/SDL/rc/foo_14.png
+    src/SDL/rc/arrow.png
+    src/SDL/rc/lazy.ttf
+    src/SDL/rc/button.png
+    src/SDL/rc/down.png
+    src/SDL/rc/left.png
+    src/SDL/rc/press.png
+    src/SDL/rc/right.png
+    src/SDL/rc/up.png
+    src/SDL/rc/splash.png
+    src/SDL/rc/dot_26.bmp
+    src/SDL/rc/window.png
+    src/SDL/rc/blue.bmp
+    src/SDL/rc/green.bmp
+    src/SDL/rc/red.bmp
+    src/SDL/rc/shimmer.bmp
+    src/SDL/rc/tiles.png
+    src/SDL/rc/foo_40.png
+    src/SDL/rc/lazy.map
     )
 
 
@@ -83,6 +109,10 @@ include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
 # Add SDL2_mixer library
 find_package(SDL2_mixer REQUIRED)
 include_directories(${SDL2_MIXER_INCLUDE_DIRS})
+
+# Add SDL2_ttf library
+find_package(SDL2_ttf REQUIRED)
+include_directories(${SDL2_TTF_INCLUDE_DIRS})
 
 # Add GLEW library
 find_package(GLEW REQUIRED)
@@ -119,6 +149,7 @@ target_link_libraries(CMakeFirstSteps
                         ${SDL2_LIBRARIES} 
                         ${SDL2_IMAGE_LIBRARIES}
                         ${SDL2_MIXER_LIBRARIES}
+                        ${SDL2_TTF_LIBRARIES}
                         box2d::box2d 
                         fmt::fmt
                         Boost::boost

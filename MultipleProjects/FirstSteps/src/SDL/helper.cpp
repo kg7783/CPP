@@ -75,6 +75,8 @@ string getFilePath(string file)
     size_t bmp = file.find(".bmp");
     size_t png = file.find(".png");
     size_t wav = file.find(".wav");
+    size_t ttf = file.find(".ttf");
+    size_t map = file.find(".map");
 
 //    std::filesystem::path tmp{std::filesystem::temp_directory_path()};
 //    std::filesystem::create_directories(tmp / "abcdef/example");
@@ -100,6 +102,14 @@ string getFilePath(string file)
     else if(wav != std::string::npos)
     {
         outFile += ".wav";
+    }
+    else if(ttf != std::string::npos)
+    {
+        outFile += ".ttf";
+    }
+    else if(map != std::string::npos)
+    {
+        outFile += ".map";
     }
 
     auto ofs = std::ofstream(outFile);

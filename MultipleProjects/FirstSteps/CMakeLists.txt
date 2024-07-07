@@ -91,6 +91,18 @@ cmrc_add_resource_library(
     src/SDL/rc/tiles.png
     src/SDL/rc/foo_40.png
     src/SDL/rc/lazy.map
+
+    src/SDL/rc/lazyfont.png
+    src/SDL/rc/foo_walk_0.png
+    src/SDL/rc/foo_walk_1.png
+    src/SDL/rc/foo_walk_2.png
+    src/SDL/rc/foo_walk_3.png
+
+    src/SDL/rc/splash_45.png
+    src/SDL/rc/splash_46.png
+    src/SDL/rc/splash_47.png
+    src/SDL/rc/splash_48.png
+    src/SDL/rc/splash_49.png
     )
 
 

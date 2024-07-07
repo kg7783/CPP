@@ -65,7 +65,6 @@ int main()
 //    _17_mouse_events();
 //    _18_key_states();
 //    _19_gamepads_and_joysticks();
-//    src/SDL/rc/
 //    _20_force_feedback();
 //    _21_sound_effects_and_music();
 //    _22_timing();
@@ -86,8 +85,17 @@ int main()
 //    _37_multiple_displays();
 //    _38_particle_engines();
 //    _39_tiling();
-    _40_texture_manipulation();
-
+//    _40_texture_manipulation();
+//    _41_bitmap_fonts();
+//    _42_texture_streaming();
+//    _43_render_to_texture();
+//    _44_frame_independent_movement();
+//    _45_timer_callbacks();
+//    _46_multithreading();
+//    _47_semaphores();
+//    _48_atomic_operations();
+    _49_mutexes_and_conditions();
+//    _50_SDL_and_opengl_2();
 //    _51_SDL_and_modern_opengl();
 
     return 0;

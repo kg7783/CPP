@@ -89,7 +89,7 @@ TEST_F(ExampleTests, TestWithMock)
         .WillOnce(Return(8));
 
     EXPECT_CALL(mock_calc, multiply)
-        .Times(2),
+        .Times(2)
         .WillOnce(Return(15));
 
     EXPECT_CALL(mock_calc, calc_sqrt)

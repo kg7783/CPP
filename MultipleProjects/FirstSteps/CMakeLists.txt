@@ -150,12 +150,20 @@ find_package(Boost 1.84 REQUIRED COMPONENTS
 # Add fmt library
 find_package(fmt CONFIG REQUIRED)
 
-#include(CTest)
-#enable_testing()
-
 file(GLOB SOURCES "src/*.cpp" "src/SDL/*.cpp")
 
-add_executable(CMakeFirstSteps ${SOURCES})
+
+#add_compile_definitions(BUILD_TESTS)
+#if(DEFINED BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(googletest)
+    add_subdirectory(test)
+    add_library(CMakeFirstSteps STATIC ${SOURCES})
+#else()
+#    add_executable(CMakeFirstSteps ${SOURCES})
+#endif(DEFINED BUILD_TESTS)
+
+
 
 target_link_libraries(CMakeFirstSteps 
                         ${SDL2_LIBRARIES} 

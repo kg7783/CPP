@@ -86,15 +86,15 @@ TEST_F(ExampleTests, TestWithMock)
 
     EXPECT_CALL(mock_calc, add(3,5))
         .Times(2)
-        .WillOnce(Return(8));
+        .WillRepeatedly(Return(8));
 
     EXPECT_CALL(mock_calc, multiply)
         .Times(2)
-        .WillOnce(Return(15));
+        .WillRepeatedly(Return(15));
 
     EXPECT_CALL(mock_calc, calc_sqrt)
         .Times(2)
-        .WillOnce(Return(10));
+        .WillRepeatedly(Return(10));
 
     manage_Calc.Execute_calc();
  

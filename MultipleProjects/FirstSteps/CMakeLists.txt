@@ -152,18 +152,15 @@ find_package(fmt CONFIG REQUIRED)
 
 file(GLOB SOURCES "src/*.cpp" "src/SDL/*.cpp")
 
-
-#add_compile_definitions(BUILD_TESTS)
-#if(DEFINED BUILD_TESTS)
+# Activate this for executing the unit test
     enable_testing()
     add_subdirectory(googletest_lib)
     add_subdirectory(test)
     add_library(CMakeFirstSteps STATIC ${SOURCES})
-#else()
+
+
+# Activate this for executing the project
 #    add_executable(CMakeFirstSteps ${SOURCES})
-#endif(DEFINED BUILD_TESTS)
-
-
 
 target_link_libraries(CMakeFirstSteps 
                         ${SDL2_LIBRARIES} 

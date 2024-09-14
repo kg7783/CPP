@@ -105,7 +105,6 @@ cmrc_add_resource_library(
     src/SDL/rc/splash_49.png
     )
 
-
 # Add box2d library
 find_package(box2d CONFIG REQUIRED)
 include_directories (${Box2D_SOURCE_DIR})
@@ -153,14 +152,47 @@ find_package(fmt CONFIG REQUIRED)
 file(GLOB SOURCES "src/*.cpp" "src/SDL/*.cpp")
 
 # Activate this for executing the unit test
+option(RUN_UNIT_TESTS "Run Catch2 unit tests" ON)
+
+if(RUN_UNIT_TESTS)
     enable_testing()
+    include(CodeCoverage)
+    append_coverage_compiler_flags()
+
+    set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -O0")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
+
     add_subdirectory(googletest_lib)
     add_subdirectory(test)
     add_library(CMakeFirstSteps STATIC ${SOURCES})
 
 
-# Activate this for executing the project
-#    add_executable(CMakeFirstSteps ${SOURCES})
+
+    set(GCOVR_PATH "/usr/bin/gcovr")
+
+    setup_target_for_coverage_gcovr_xml(
+        NAME TestDoMathCoverageXml
+        EXECUTABLE ExampleTests
+        DEPENDENCIES ExampleTests CMakeFirstSteps
+    )
+
+    setup_target_for_coverage_gcovr_html(
+        NAME TestDoMathCoverageHtml
+        EXECUTABLE ExampleTests
+        DEPENDENCIES ExampleTests CMakeFirstSteps
+    )
+
+
+
+
+
+
+
+
+else()
+    add_executable(CMakeFirstSteps ${SOURCES})
+endif()
+   
 
 target_link_libraries(CMakeFirstSteps 
                         ${SDL2_LIBRARIES} 

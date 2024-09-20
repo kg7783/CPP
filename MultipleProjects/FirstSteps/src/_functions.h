@@ -19,3 +19,4 @@ extern int manage_box2d();
 extern void manage_boost_locale(void);
 extern void manage_boost_chrono();
 extern void manage_boost_math();
+extern void manage_pthreadsFMC(void);

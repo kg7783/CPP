@@ -24,7 +24,7 @@ int main()
 
 //    manage_ranges();
 
-    manage_calc();
+//    manage_calc();
 
 //    manage_primzahl(0,10000000);
 
@@ -97,6 +97,8 @@ int main()
 //    _49_mutexes_and_conditions();
 //    _50_SDL_and_opengl_2();
 //    _51_SDL_and_modern_opengl();
+
+    manage_pthreadsFMC();
 
     return 0;
 }

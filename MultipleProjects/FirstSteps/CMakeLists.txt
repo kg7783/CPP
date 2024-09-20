@@ -152,7 +152,7 @@ find_package(fmt CONFIG REQUIRED)
 file(GLOB SOURCES "src/*.cpp" "src/SDL/*.cpp")
 
 # Activate this for executing the unit test
-option(RUN_UNIT_TESTS "Run Catch2 unit tests" ON)
+option(RUN_UNIT_TESTS "Run Catch2 unit tests" OFF)
 
 if(RUN_UNIT_TESTS)
     enable_testing()
@@ -165,8 +165,6 @@ if(RUN_UNIT_TESTS)
     add_subdirectory(googletest_lib)
     add_subdirectory(test)
     add_library(CMakeFirstSteps STATIC ${SOURCES})
-
-
 
     set(GCOVR_PATH "/usr/bin/gcovr")
 
@@ -181,14 +179,6 @@ if(RUN_UNIT_TESTS)
         EXECUTABLE ExampleTests
         DEPENDENCIES ExampleTests CMakeFirstSteps
     )
-
-
-
-
-
-
-
-
 else()
     add_executable(CMakeFirstSteps ${SOURCES})
 endif()

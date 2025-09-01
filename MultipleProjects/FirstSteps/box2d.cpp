@@ -103,4 +103,3 @@ int manage_box2d()
 
 	return 0;
 }
-

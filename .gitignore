@@ -4,3 +4,7 @@ MultipleProjects/FirstSteps/build/
 MultipleProjects/HelloWorld1/build/
 MultipleProjects/HelloWorld2/build/
 MultipleProjects/FirstSteps/test.txt
+
+MultipleProjects/FirstSteps/CMakeCache.txt
+
+MultipleProjects/FirstSteps/myoutput.txt

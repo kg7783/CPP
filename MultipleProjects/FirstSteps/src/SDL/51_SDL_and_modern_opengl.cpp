@@ -2,9 +2,9 @@
 and may not be redistributed without written permission.*/
 
 //Using SDL, SDL OpenGL, GLEW, standard IO, and strings
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include <GL/glew.h>
-#include <SDL2/SDL_opengl.h>
+#include <SDL_opengl.h>
 #include <GL/glu.h>
 #include <stdio.h>
 #include <string>

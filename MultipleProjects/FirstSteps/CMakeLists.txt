@@ -184,12 +184,12 @@ else()
 endif()
    
 
-target_link_libraries(CMakeFirstSteps 
+target_link_libraries(CMakeFirstSteps
                         ${SDL2_LIBRARIES} 
                         ${SDL2_IMAGE_LIBRARIES}
                         ${SDL2_MIXER_LIBRARIES}
                         ${SDL2_TTF_LIBRARIES}
-                        box2d::box2d 
+#                        box2d::box2d 
                         fmt::fmt
                         Boost::boost
                         Boost::date_time 

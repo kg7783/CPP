@@ -26,7 +26,7 @@ int main()
 
 //    manage_calc();
 
-//    manage_primzahl(0,10000000);
+    manage_primzahl(0,10000000);
 
 //    manage_fractale();
 
@@ -98,7 +98,7 @@ int main()
 //    _50_SDL_and_opengl_2();
 //    _51_SDL_and_modern_opengl();
 
-    manage_pthreadsFMC();
+//    manage_pthreadsFMC();
 
     return 0;
 }

@@ -98,7 +98,9 @@ int main()
 //    _50_SDL_and_opengl_2();
 //    _51_SDL_and_modern_opengl();
 
-    manage_pthreadsFMC();
+//    manage_pthreadsFMC();
+
+    manage_beautiful_graphics();
 
     return 0;
 }

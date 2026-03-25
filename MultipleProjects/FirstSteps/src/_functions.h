@@ -20,3 +20,4 @@ extern void manage_boost_locale(void);
 extern void manage_boost_chrono();
 extern void manage_boost_math();
 extern void manage_pthreadsFMC(void);
+extern int manage_beautiful_graphics(void);

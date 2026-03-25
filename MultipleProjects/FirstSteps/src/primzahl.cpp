@@ -3,6 +3,8 @@
 #include <fstream>
 #include <filesystem>
 
+#include <boost/chrono.hpp>
+
 using namespace std;
 
 static void check_file(string file);
@@ -105,13 +107,22 @@ void manage_primzahl(unsigned long lower_limit, unsigned long upper_limit)
     std::ofstream outfile;
     outfile.open(file, std::ios_base::app); // append instead of overwrite
 
+    boost::chrono::system_clock::time_point last = boost::chrono::system_clock::now(); 
+    boost::chrono::system_clock::time_point now  = boost::chrono::system_clock::now(); 
+            
     for(unsigned long i=lower_limit; i<= upper_limit; i++)
     {
         bool result = prim(i);
+
         if(result == true)
         {
-            outfile << i << endl;
-            cout << i << endl;    
+            now = boost::chrono::system_clock::now(); 
+            boost::chrono::microseconds t = boost::chrono::duration_cast<boost::chrono::microseconds>(now-last);
+            auto diff = t.count();
+            last = now;
+
+            outfile << i << ";" << diff << endl;
+            cout << i << "\t" << diff << endl;    
         }
     }
 

@@ -26,7 +26,7 @@ int main()
 
 //    manage_calc();
 
-    manage_primzahl(0,10000000);
+//    manage_primzahl(0,10000000);
 
 //    manage_fractale();
 

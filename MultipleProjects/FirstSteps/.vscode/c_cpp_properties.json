@@ -10,7 +10,7 @@
             ],
             "defines": [],
             "cStandard": "c23",
-            "cppStandard": "c++23",
+            "cppStandard": "c++26",
             "intelliSenseMode": "linux-gcc-x64",
             "browse": {
                 "path": [
@@ -22,7 +22,10 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
-            "compilerPath": "/usr/bin/g++-13"
+            "compilerPath": "/usr/bin/g++-16"
+
+//            also works, because also this symbolic link to the compiler exists"
+//            "compilerPath": "/usr/bin/g++"
         }
     ],
     "version": 4

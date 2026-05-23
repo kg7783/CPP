@@ -1,14 +1,25 @@
 cmake_minimum_required(VERSION 3.10.0)
 
-set (CMAKE_CXX_STANDARD 23)
+set (CMAKE_CXX_STANDARD 26)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++23")
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++26")
 
 #========== Set vcpkg path BEFORE project(...), otherwise error ==================#
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_TOOLCHAIN_FILE} $ENV{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 #========== Define project(...) ==================#
 project(CMakeFirstSteps VERSION 0.1.0 LANGUAGES C CXX)
+
+
+
+
+
+
+
+
+
+
+
 
 #========== Additional CMake modules: FirstSteps/src/cmake/ ==================#
 # - CMakeRC.cmake
@@ -181,6 +192,16 @@ if(RUN_UNIT_TESTS)
     )
 else()
     add_executable(CMakeFirstSteps ${SOURCES})
+
+    #========== GLIBCXX-Mismatch ==================#
+
+    #== GCC 13 hat beim Kompilieren std::cout, std::tuple, std::string usw. aus der System-libstdc++ unter /lib/x86_64-linux-gnu/libstdc++.so.6 verwendet. Diese libstdc++ war damals neu genug für GCC 13 → Binary startet.
+    #== GCC 16.1.0 hat eine eigene, neuere libstdc++ unter /usr/local/gcc-16.1.0/lib64/. Beim Kompilieren linkt GCC 16.1.0 Symbole aus dieser neueren Version (z.B. GLIBCXX_3.4.35) in dein Binary. Zur Laufzeit sucht der Linker aber standardmäßig in der alten System-libstdc++ → die hat diese Symbole nicht → Startfehler.
+    #== Der RPATH sagt dem Binary: "Schau zuerst in /usr/local/gcc-16.1.0/lib64/ nach der libstdc++". Dann findet es die richtige Version.
+    set_target_properties(CMakeFirstSteps PROPERTIES
+        INSTALL_RPATH "/usr/local/gcc-16.1.0/lib64"
+        BUILD_RPATH   "/usr/local/gcc-16.1.0/lib64")
+
 endif()
    
 

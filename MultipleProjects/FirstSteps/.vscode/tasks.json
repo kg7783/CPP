@@ -3,7 +3,7 @@
         {
           "label": "CMake: Build active folder",
           "type": "shell",
-          "command": "cmake",
+          "command": "cmake --build .",
           "group": {
             "kind": "build",
             "isDefault": true

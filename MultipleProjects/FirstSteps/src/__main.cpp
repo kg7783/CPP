@@ -1,6 +1,7 @@
+
 #include "_functions.h"
 
-#include "SDL/sdl.h"
+//#include "SDL/sdl.h"
 
 
 int main()
@@ -26,7 +27,7 @@ int main()
 
 //    manage_calc();
 
-    manage_primzahl(0,10000000);
+//    manage_primzahl(0,10000000);
 
 //    manage_fractale();
 
@@ -99,6 +100,8 @@ int main()
 //    _51_SDL_and_modern_opengl();
 
 //    manage_pthreadsFMC();
+
+    manage_pack_indexing();
 
     return 0;
 }

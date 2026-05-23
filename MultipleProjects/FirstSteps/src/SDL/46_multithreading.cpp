@@ -8,6 +8,11 @@ and may not be redistributed without written permission.*/
 #include <stdio.h>
 #include <string>
 
+// Ohne <cstdint> könnte intptr_t undefiniert sein. Zwar wird es auf Linux/glibc oft durch andere Header (z.B. <stdio.h>) indirekt mitgebracht, 
+// aber das ist implementationsabhängig. 
+// => Das explizite Include macht es garantiert verfügbar und dokumentiert die Absicht.
+#include <cstdint>
+
 #include "helper.h"
 
 //Screen dimension constants
@@ -559,7 +564,7 @@ int _46_multithreading()
 
 			//Run the thread
 			int data = 101;
-			SDL_Thread* threadID = SDL_CreateThread( threadFunction, "LazyThread", (void*)data );
+			SDL_Thread* threadID = SDL_CreateThread( threadFunction, "LazyThread", (void*)(intptr_t)data );
 
 			//While application is running
 			while( !quit )

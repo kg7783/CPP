@@ -100,6 +100,7 @@ int main()
 //    _51_SDL_and_modern_opengl();
 
 //    manage_pthreadsFMC();
+//    manage_beautiful_graphics();
 
     manage_pack_indexing();
 

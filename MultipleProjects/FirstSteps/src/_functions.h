@@ -22,3 +22,4 @@ extern void manage_boost_math();
 extern void manage_pthreadsFMC(void);
 extern int manage_beautiful_graphics(void);
 extern void manage_pack_indexing(void);
+extern void manage_explore_cpp_26();

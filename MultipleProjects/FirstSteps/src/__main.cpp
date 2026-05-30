@@ -102,7 +102,9 @@ int main()
 //    manage_pthreadsFMC();
 //    manage_beautiful_graphics();
 
-    manage_pack_indexing();
+//    manage_pack_indexing();
+
+    manage_explore_cpp_26();
 
     return 0;
 }

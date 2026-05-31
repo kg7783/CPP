@@ -277,7 +277,7 @@ void manage_explore_cpp_26()
 
     // C++26 (vorgeschlagen, nicht angenommen): Pattern Matching via inspect – noch kein Compiler-Support
     std::println("--- Pattern Matching (C++26, nicht angenommen) ---");
-    std::println("  Syntax: inspect(obj) { <int x> => f(x); <string s> => g(s); }\n");
+    std::println("  Syntax: inspect(obj) {{ <int x> => f(x); <string s> => g(s); }}\n");
 
     // C++26 (vorgeschlagen, nicht angenommen): std::execution / Senders+Receivers (P2300)
     std::println("--- Senders/Receivers (C++26, nicht angenommen) ---");

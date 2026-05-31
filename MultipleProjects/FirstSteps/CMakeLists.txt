@@ -148,8 +148,8 @@ find_package(OpenGL REQUIRED)
 include_directories(${OpenGL_INCLUDE_DIRS})
 #link_libraries(${OpenGL_LIBRARIES})
 
-# Add Boost library
-find_package(Boost 1.84 REQUIRED COMPONENTS
+# Add Boost library (CONFIG mode, since FindBoost was removed starting CMake 4)
+find_package(Boost 1.84 REQUIRED CONFIG COMPONENTS
                 date_time 
                 filesystem 
                 iostreams 

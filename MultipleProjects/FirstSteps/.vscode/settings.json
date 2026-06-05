@@ -1,7 +1,15 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
-//    "cmake.useCMakePresets": "never"
+    "cmake.useCMakePresets": "auto",
+
+// Use Unix Makefile build system with parallel processors
+//    "cmake.generator": "Unix Makefiles",
+//    "cmake.parallelJobs": 0,
+
+// Use ninja build system, which automatically uses parallel processors    
+    "cmake.generator": "Ninja",
+
 
     "cmake.configureOnOpen": true,
     "cmake.configureSettings": 

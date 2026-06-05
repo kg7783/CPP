@@ -22,10 +22,7 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
-            "compilerPath": "/usr/bin/g++-16"
-
-//            also works, because also this symbolic link to the compiler exists"
-//            "compilerPath": "/usr/bin/g++"
+            "compilerPath": "/usr/bin/g++"
         }
     ],
     "version": 4

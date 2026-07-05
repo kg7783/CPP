@@ -4,7 +4,7 @@
 //#include "SDL/sdl.h"
 
 
-int main()
+int main(int argc, char *argv[])
 {
 //    manage_deque();
  
@@ -104,7 +104,10 @@ int main()
 
 //    manage_pack_indexing();
 
-    manage_explore_cpp_26();
+//    manage_explore_cpp_26();
+
+    manage_plasmaDemo_Qt(argc, argv);
+//    manage_plasmaDemo_CPP();
 
     return 0;
 }

@@ -10,9 +10,9 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_TOOLCHAIN_FILE} $ENV{HOME}/vcpkg/scripts/builds
 #========== Define project(...) ==================#
 project(CMakeFirstSteps VERSION 0.1.0 LANGUAGES C CXX)
 
+#list(PREPEND CMAKE_PREFIX_PATH "/home/kg7783/dev/Qt6_host")
 
-
-
+set(CMAKE_AUTOMOC ON)
 
 
 
@@ -160,6 +160,10 @@ find_package(Boost 1.84 REQUIRED CONFIG COMPONENTS
 # Add fmt library
 find_package(fmt CONFIG REQUIRED)
 
+# Add Qt6
+find_package(Qt6 REQUIRED COMPONENTS Widgets OpenGLWidgets OpenGL)
+
+
 file(GLOB SOURCES "src/*.cpp" "src/SDL/*.cpp")
 
 # Activate this for executing the unit test
@@ -210,17 +214,25 @@ target_link_libraries(CMakeFirstSteps
                         ${SDL2_IMAGE_LIBRARIES}
                         ${SDL2_MIXER_LIBRARIES}
                         ${SDL2_TTF_LIBRARIES}
+
 #                        box2d::box2d 
                         fmt::fmt
+                        
                         Boost::boost
                         Boost::date_time 
                         Boost::filesystem
                         Boost::iostreams
                         Boost::locale
                         Boost::chrono
+                        
                         OpenGL::GL
                         GLEW::GLEW
+                        
                         FirstSteps::rc
+                        
+                        Qt6::Widgets
+                        Qt6::OpenGLWidgets
+                        Qt6::OpenGL                        
                         )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

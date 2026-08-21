@@ -25,3 +25,4 @@ extern void manage_pack_indexing(void);
 extern void manage_explore_cpp_26();
 extern int manage_plasmaDemo_Qt(int argc, char *argv[]);
 extern int manage_plasmaDemo_CPP();
+extern void manage_three_dee();

@@ -106,8 +106,10 @@ int main(int argc, char *argv[])
 
 //    manage_explore_cpp_26();
 
-    manage_plasmaDemo_Qt(argc, argv);
+//    manage_plasmaDemo_Qt(argc, argv);
 //    manage_plasmaDemo_CPP();
+
+    manage_three_dee();
 
     return 0;
 }
